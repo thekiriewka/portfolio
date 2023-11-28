@@ -1,0 +1,40 @@
+h1{
+    font-size: 80px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+p{
+    font-size: 20px;
+}
+
+
+.wrapper a{
+    font-size: 16px;
+    color: var(--purple);
+}
+
+.wrapper a:hover{
+    color: #fff;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    border-bottom: 1px solid var(--purple);
+
+}
+.wrapper_row{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: space-evenly;
+    letter-spacing: 2px;
+    margin: 0 auto;
+    text-align: center;
+}

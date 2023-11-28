@@ -1,0 +1,67 @@
+.wrapper{
+    background-color: #252526;
+    height: 100%;
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(to right, #252526, var(--purple));
+    background-size: 200% 100%;
+    animation: gradientAnimation 5s infinite linear;
+}
+
+.wrapper::before {
+    top: 0;
+}
+
+.wrapper::after {
+    bottom: 0;
+    transform: scaleX(-1);
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.sub_title{
+    font-size: 36px;
+}
+
+.second_title{
+    font-size: 24px;
+    color: var(--purple);
+}
+
+.bottom_title{
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}

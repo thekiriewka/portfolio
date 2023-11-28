@@ -1,0 +1,29 @@
+.wrapper{
+    width: 100%;
+    background: url(./../../img/main-bg.png);
+
+    line-height: 2;
+}
+
+.wrapper_row{
+    max-width: 1200px;
+    min-height: 650px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.high{
+    font-size: 48px;
+}
+
+.second{
+    font-size: 36px;
+}
+
+.bottom{
+    font-size: 30px;
+}
