@@ -1,32 +1,43 @@
-import React from 'react'
-// import { NavLink } from 'react-router-dom';
-import style from './Navbar.module.css'
+import React from 'react';
+import style from './Navbar.module.css';
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
-
-  // const activeLink = style.buttons_menu_link_active;
-  // const normalLink = style.buttons_menu_link;
+  const scrollToElement = (elementId) => {
+    scroll.scrollTo(elementId, {
+      smooth: true,
+      duration: 500,
+    });
+  };
 
   return (
     <div className={style.wrapper}>
       <div className={style.container}>
         <div className={style.logo}>
-          <a href="/" className={style.logo_portfolio}>Shadrin Evgene<span> portfolio</span></a>
+          <div className={style.logo_portfolio}>
+            Shadrin Evgene<span> portfolio</span>
+          </div>
         </div>
         <div className={style.buttons}>
-          <div className={style.buttons_menu}>
-            <a href="/" className={style.buttons_menu_link}>Home</a>
+          <div className={style.buttons_menu} onClick={() => scrollToElement('Main')}>
+            <Link to="Main" smooth={true} duration={500} className={style.buttons_menu_link}>
+              Home
+            </Link>
           </div>
-          <div className={style.buttons_menu}>
-            <a href="/projects" className={style.buttons_menu_link}>Projects</a>
+          <div className={style.buttons_menu} onClick={() => scrollToElement('Projects')}>
+            <Link to="Projects" smooth={true} duration={500} className={style.buttons_menu_link}>
+              Projects
+            </Link>
           </div>
-          <div className={style.buttons_menu}>
-            <a href="/contacts" className={style.buttons_menu_link}>Contacts</a>
+          <div className={style.buttons_menu} onClick={() => scrollToElement('Contacts')}>
+            <Link to="Contacts" smooth={true} duration={500} className={style.buttons_menu_link}>
+              Contacts
+            </Link>
           </div>
         </div>
       </div>
-    </div>
-  )
-}
+  </div>
+  );
+};
 
 export default Navbar;

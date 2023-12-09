@@ -26,7 +26,7 @@ p{
     flex: 1;
     align-items: center;
     border-bottom: 1px solid var(--purple);
-
+    padding-bottom: 30px;
 }
 .wrapper_row{
     display: flex;
@@ -37,4 +37,15 @@ p{
     letter-spacing: 2px;
     margin: 0 auto;
     text-align: center;
+}
+
+
+@media(max-width: 470px){
+    h1{
+        font-size: 50px;
+    }
+
+    h2{
+        font-size: 30px;
+    }
 }

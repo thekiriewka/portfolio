@@ -7,7 +7,7 @@
     max-width: 1200px;
     margin: 0 auto;
     letter-spacing: 2px;
-    padding: 20px 0;
+    padding: 20px 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -16,6 +16,11 @@
     display: flex;
     font-size: 24px;
     align-items: center;
+}
+
+.buttons_menu:hover
+{
+    cursor: pointer;
 }
 
 .logo_portfolio{
@@ -53,4 +58,22 @@
 
 .logo a:hover{
     color: #fff;
+}
+
+@media(max-width:580px){
+    .wrapper{
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--purple);
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .container{
+        justify-content: center;
+    }
 }

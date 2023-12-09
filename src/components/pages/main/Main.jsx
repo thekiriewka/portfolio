@@ -5,7 +5,7 @@ import Header from '../../header/Header'
 
 const Main = () => {
   return (
-    <div className={style.wrapper}>
+    <div id='Main' className={style.wrapper}>
       <div className={style.wrapper_row}>
         <Header />
         <Content />

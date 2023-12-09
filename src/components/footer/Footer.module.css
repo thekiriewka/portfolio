@@ -12,7 +12,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 25%;
+    max-width: 1200px;
+}
+
+.wrapper a{
+    padding: 0 20px;
 }
 
 .copyrigth{

@@ -3,7 +3,7 @@ import style from './Contacts.module.css'
 
 const contacts = () => {
   return (
-    <div className={style.wrapper}>
+    <div id='Contacts' className={style.wrapper}>
       <div className={style.wrapper_row}>
         <div className={style.title}>
           <h1>Contacts</h1>
